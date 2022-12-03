@@ -14,9 +14,7 @@
         </div>
         <div class="form-content">
           <form method="post" novalidate>{% csrf_token %}
-            {% comment %}
-            Here place your form - use grid layout from chota.
-            {% endcomment %}
+            {{form.as_p}}
             <div class="is-center">
               <input class="button secondary radius-10" type="submit" value="Send a wish list">
             </div>
